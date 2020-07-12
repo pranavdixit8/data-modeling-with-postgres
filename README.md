@@ -5,7 +5,7 @@ The idea of the project is to analysis the activity on a music app by artists, s
 # Setting up your environment for the project
 
 ## Prerequisites
-- postgres: if not pre-installed, download [here](https://www.postgresql.org/download/){:target="_blank"}
+- postgres: if not pre-installed, download [here](https://www.postgresql.org/download/)
 
 ## Getting started
 ```
