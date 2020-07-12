@@ -87,7 +87,7 @@ def process_log_file(cur, filepath):
             songid, artistid = results
         else:
             songid, artistid = None, None
-            #ignoring values with None values
+            
             
 
         # insert songplay record
