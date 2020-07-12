@@ -28,7 +28,7 @@ def create_database():
     """
     
     # connect to default database
-    conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")
+    conn = psycopg2.connect("host=127.0.0.1 dbname=postgres user=student password=student")
     conn.set_session(autocommit=True)
     cur = conn.cursor()
 #     cur.execute("""SELECT pg_terminate_backend(pg_stat_activity.pid)
