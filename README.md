@@ -5,10 +5,14 @@ The idea of the project is to analysis the activity on a music app by artists, s
 # Commands
 
 > Create the database and tables.
+'''
 >> python create_table.py
+'''
  
 > perform etl and insert data into tables
+'''
 >>python etl.py
+'''
 
 # Files
 
