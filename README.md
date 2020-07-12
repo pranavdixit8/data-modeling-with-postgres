@@ -8,33 +8,41 @@ The idea of the project is to analysis the activity on a music app by artists, s
 - postgres: if not pre-installed, download [here](https://www.postgresql.org/download/)
 
 ## Getting started
+
+#### Clone the repository
 ```
 $ git clone https://github.com/pranavdixit8/data-modeling-with-postgres.git
+```
+#### Set up your environement and install all the dependencies
+```
 $ virtualenv dend-project1
 $ source dend-project1/bin/activate
-$ pip install -r requirements.txt 
+$ pip install -r requirements.txt
+```
+#### Create the kernel for the virtual environment
+```
 $ ipython kernel install --user --name dend-project1 
 ```
 Note: Use the kernel ***dend-project1*** while using jupyter notebook
 
 ## Commands
 
->Create the database and tables.
+##### Create the database and tables
 ```
 $ python create_table.py
 ```
  
->perform etl and insert data into tables
+##### perform etl and insert data into tables
 ```
 $ python etl.py
 ```
 
 # Files
 
+ - ***sql_queries.py***: this file contain all the sql queries for creating, inserting, and droping the tables in the database and required selection query for our design
  - ***create_tables.py***: this file creates the database and the tables (fact and dimension table of the star schema), it uses the file: *sql_queries*.
  - ***etl.py***: this file execute the etl process for our project: loading the files in dataframes, modifying the data and inserting the data in the tables.
- - ***sql_queries.py***: this file contain all the sql queries for creating, inserting, and droping the tables in the database and required selection query for our design
- - ***test.ipynb***: thid is the jupyter notebook to test if the table were created as expected and values inserted into the table.
+ - ***test.ipynb***: this is the jupyter notebook to test if the table were created as expected and values inserted into the table.
  - ***etl.ipynb***: this jupyter notebook involves loading a single file into the database before moving to load all the files in the database.
 
 
